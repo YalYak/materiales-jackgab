@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -10,14 +10,20 @@
   <style>
     .hero-image {
       position: relative;
+      height: 500px; /* Ajusta la altura como necesites */
+      overflow: hidden;
+      padding-top: 50px; /* Ajusta el padding como necesites */
     }
 
     .hero-image img {
       width: 100%;
-      height: auto;
-      position: relative;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: -1;
-
     }
 
     .hero-image::before {
@@ -66,6 +72,26 @@
       background-color: #000;
       color: #fff;
     }
+
+    @media screen and (max-width: 600px) {
+      .hero-text {
+        padding: 50px 20px;
+      }
+      
+      .hero-text h1 {
+        font-size: 36px;
+      }
+      
+      .hero-text p {
+        font-size: 18px;
+      }
+      
+      .hero-text button {
+        font-size: 16px;
+      }
+    }
+
+
   </style>
 </head>
 
@@ -131,7 +157,7 @@
               <div class="card-body">
                 <h5 class="card-title">Armex</h5>
                 <p class="card-text">Castillo de acero electrosoldado.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -141,7 +167,7 @@
               <div class="card-body">
                 <h5 class="card-title">Tabique tojo</h5>
                 <p class="card-text">Material de barro precocido de proceso artesanal.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -151,7 +177,7 @@
               <div class="card-body">
                 <h5 class="card-title">Malla Electrosoldada</h5>
                 <p class="card-text">Malla electrosoldada.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -178,7 +204,7 @@
               <div class="card-body">
                 <h5 class="card-title">Renta de Maquinaria</h5>
                 <p class="card-text">Ofrecemos una amplia variedad de maquinaria para la construcción, incluyendo retroexcavadoras, vibrocompactadores, y más.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -188,7 +214,7 @@
               <div class="card-body">
                 <h5 class="card-title">Albañilería</h5>
                 <p class="card-text">Ofrecemos servicios de albañilería para la construcción de estructuras, paredes, pisos, y más.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -198,7 +224,7 @@
               <div class="card-body">
                 <h5 class="card-title">Instalación</h5>
                 <p class="card-text">Ofrecemos servicios de instalación de diferentes tipos de materiales para construcción, incluyendo instalación de pisos, techos, y más.</p>
-                <a href="#" class="btn btn-primary">Ver detalles</a>
+                <a href="contacto.html" class="btn btn-primary">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -211,6 +237,42 @@
       </div>
     </section>
   </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Información de Contacto</h3>
+          <p>Dirección: Calle 123, Ciudad</p>
+          <p>Teléfono: 7225395688</p>
+          <p>Correo Electrónico: info@miempresa.com</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes: 9:00am - 6:00pm</p>
+          <p>Sábado: 9:00am - 1:00pm</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Nuestros Servicios</h3>
+          <ul>
+            <li>Venta de Materiales</li>
+            <li>Renta de Maquinaria</li>
+            <li>Albañilería</li>
+            <li>Plomería</li>
+            <li>Instalación</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">© 2023 Materiales Jack&Gab | Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 
 </html>
